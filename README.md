@@ -1,17 +1,17 @@
-Smart building optimisation problems
+Smart building optimization problems
 =============
 
-This is a collection of mathematical optimisation problems on smart buildings.
+This is a collection of mathematical optimization problems on smart buildings.
 
 Citing
 --------------
 If you are using this project for a paper or other publication, please cite it as follows:
 
     @online{Picciau2016,
-       Title    = {Smart building optimisation problems},
+       Title    = {Smart building optimization problems},
        Author   = {Andrea Picciau},
        Date     = {2016},
-       Url      = {https://github.com/andpic/smart-building-optimisation},
+       Url      = {https://github.com/andpic/smart-building-optimization},
        Note     = {GitHub repository},
     }
 
@@ -44,16 +44,16 @@ To generate problems or change the parameters you need to do the following:
 
 2. Run the script (it is a bash script) with `./generate_data.sh`
 
-3. Read the optimisation problem with either [the SCIP optimisation suite](http://scip.zib.de/) or
+3. Read the optimization problem with either [the SCIP optimization suite](http://scip.zib.de/) or
    [ZIMPL](http://zimpl.zib.de). The latter can be installed with *apt-get* on Ubuntu.
 
-4. To create a problem that can be read on all optimisation solvers, either write it out in some
-   standard format (with [the SCIP optimisation suite](http://scip.zib.de/)) or execute one of the
+4. To create a problem that can be read on all optimization solvers, either write it out in some
+   standard format (with [the SCIP optimization suite](http://scip.zib.de/)) or execute one of the
    following commands from the problem folder:
    * `zimpl -t mps smart_building.zpl`
    * `zimpl -t lp  smart_building.zpl`
 
 License
 --------------
-The content of this project itself is licensed under the Creative Commons Attribution 4.0 license,
-and the accompanying source code used is licensed under the MIT license.
+The content of this project itself is licensed under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/),
+and the accompanying source code used is licensed under the [MIT license](https://github.com/andpic/smart_building_optimization/blob/master/LICENSE).
