@@ -29,13 +29,13 @@ param eta_C := 0.9;        # Charge/discharge efficiency
 param R := 4;              # Battery capacity [kWh]
 param E_0 := 2;            # Initial energy in the battery [kWh]
 param C[A] :=              # Cost [£/kWh]
-   read "cost.dat" as "1n" comment "#";
+   read "../cost.dat" as "1n" comment "#";
 param P_DC_load[A] :=      # DC load [kW]
-   read "dc_load.dat" as "1n" comment "#";
+   read "../dc_load.dat" as "1n" comment "#";
 param P_AC_load[A] :=      # AC load [kW]
-   read "ac_load.dat" as "1n" comment "#";
+   read "../ac_load.dat" as "1n" comment "#";
 param P_PV[A] :=           # PV output [kW]
-   read "pv_output.dat" as "1n" comment "#";
+   read "../pv_output.dat" as "1n" comment "#";
 
 # Secondary parameters
 param E_min := SOC_min*R;                   # Minimum energy that can be stored in the battery

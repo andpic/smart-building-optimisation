@@ -42,6 +42,8 @@ awk   -v N_STEPS=$N_STEPS \
 awk   -v N_STEPS=$N_STEPS \
       -v TIME_STEP=$TIME_STEP \
       ' BEGIN  { 
+                  srand(10)
+
                   # High and low DC loads
                   HIGH_LOAD=0.17;   # kW
                   LOW_LOAD=0.05;    # kW
@@ -77,6 +79,8 @@ awk   -v N_STEPS=$N_STEPS \
 awk   -v N_STEPS=$N_STEPS \
       -v TIME_STEP=$TIME_STEP \
       ' BEGIN  { 
+                  srand(5)
+
                   # High and low AC loads
                   HIGH_LOAD=3;   # kW
                   LOW_LOAD=0.2;  # kW
@@ -101,6 +105,8 @@ awk   -v N_STEPS=$N_STEPS \
 awk   -v N_STEPS=$N_STEPS \
       -v TIME_STEP=$TIME_STEP \
       ' BEGIN  { 
+                  srand(1)
+
                   # High and low production
                   HIGH_PROD=0.3; # kW
                   LOW_PROD=0;    # kW
